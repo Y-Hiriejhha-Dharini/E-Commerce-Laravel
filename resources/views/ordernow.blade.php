@@ -27,14 +27,15 @@
             </table>
         </div>
             <div>
-                <form>
+                <form action="/orderplace" method="POSt">
+                @csrf
                     <div class="mb-3">
-                        <textarea type="text" placeholder="Enter your address" class="form-control"></textarea>
+                        <textarea placeholder="Enter your address" name="address" class="form-control"></textarea>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Payment Method</label><br><br>
-                        <input type="radio" name="payment"><span> Online Payment</span><br><br>
-                        <input type="radio" name="payment"><span> Cash on Delivery</span><br><br>
+                        <input type="radio" value="cash" name="payment"><span> Online Payment</span><br><br>
+                        <input type="radio" value="cash" name="payment"><span> Cash on Delivery</span><br><br>
                     </div>
                     <button type="submit" class="btn btn-primary">Order Now</button>
                 </form>

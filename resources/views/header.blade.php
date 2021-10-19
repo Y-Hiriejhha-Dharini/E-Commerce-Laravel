@@ -20,7 +20,7 @@ if(Session::has('user'))
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Order</a>
+          <a class="nav-link" href="/myorders">Order</a>
         </li>
         <form action="search" method="get" class="d-flex">
             <input class="form-control me-2 search-box" name="query" type="search" placeholder="Search" aria-label="Search">
